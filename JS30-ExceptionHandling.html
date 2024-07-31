@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+    <script>
+        function divide(a, b) {
+            try {
+                if (b===0) {
+                    throw new Error('Division by zero is not allowed. ');
+                }
+                let result =a / b;
+                console.log(`Result: ${result}`);
+                  console.log("End..");
+            } catch (error) {
+                consloe.error(`Error: ${error.messgae}`);
+            }
+       }
+       divide(10,2);//Result: 5
+            //division operation completed.
+            divide(10,0);//Error: Division by zero is not allowed.
+    </script>
+</body>
+</html>
